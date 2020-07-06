@@ -1,0 +1,12 @@
+# Don't track content of these folders
+node_modules/
+
+# references #
+######################
+*.webloc
+*.png
+*.zip
+
+# OS generated files #
+######################
+.DS_Store

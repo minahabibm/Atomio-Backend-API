@@ -1,0 +1,45 @@
+{
+  "name": "apophis-bunker-app-api-challenge",
+  "version": "1.0.0",
+  "description": "Backend Api",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": " (sleep 1 && npx sequelize-cli db:seed:all) & ./node_modules/nodemon/bin/nodemon.js --watch ../'Apophis Bunker App API'",
+    "test": " \"echo \\\"Error: no test specified\\\" && exit 1\"",
+    "lint": "eslint . --ext .js || true",
+    "lint:fix": "eslint . --ext .js --fix || true"
+  },
+  "author": "M.H",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lint": "^0.7.0",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.10",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/register": "^7.9.0",
+    "@babel/runtime": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "nodemon": "^2.0.4"
+  }
+}
